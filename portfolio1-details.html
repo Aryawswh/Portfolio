@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portofolio Arya</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-sidebar d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://linkedin.com/in/arya-widura-swh" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html#hero">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/TugasAkhir.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/Screenshot (213).png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/Logic PLC.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Project Tittle</strong>: Design of Control System and Safety System in Production Separator Based on PLC and HMI</li>
+                <li><strong>Field</strong>: Process Control & Industrial Automation</li>
+                <li><strong>Tools Used</strong>: EcoStruxure Machine Expert, Vijeo Designer, AutoCad</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <section id="project-description" class="section">
+              <div class="container">
+                <h2>Project Description</h2>
+                <p
+                  style="text-align: justify; text-indent: 2em; ">The main focus is the automatic control of the fluid separation process, as well as the prevention of hazardous conditions through interlocks and shutdown systems.
+                </p>
+
+                <h6>1. P&ID Analysis to SAFE Chart</h6>
+                <p style="text-align: justify; text-indent: 2em; margin-bottom: 0.5em;">
+                  The process starts with a P&ID (Piping and Instrumentation Diagram) analysis to understand the fluid path, location of instruments (such as pressure, level, temperature transmitters), and actuator equipment (valves). 
+                  From the P&ID, critical parameters for control and safety systems are determined. Next, a SAFE Chart is prepared in AutoCAD, which describes the relationship between:
+                </p>
+
+                <ul>
+                  <li>Process Variable (for example: separator pressure is too high)</li>
+                  <li>Alarm logic (warning to operator)</li>
+                  <li>Shutdown logic (for example: closing inlet valve in case of overflow)</li>
+                </ul>
+
+                <h6>2. Control Logic (PLC Logic)</h6>
+                <ul>
+                  <li>System built using EcoStruxure Machine Expert, with ladder logic</li>
+                  <li>Analog signals of 4-20 mA are simulated and scaled into process variables, such as level (%) or pressure (psig), using linear formulas</li>
+                  <li>Create alarm and shutdown logic, such as: when the level exceeds the high-high limit, the system will enter the shutdown state, the valve will close automatically</li>
+                  <li>Operation is available in two modes: Manual and Auto</li>
+                </ul>
+
+                <h6>3. HMI design</h6>
+                <ul>
+                  <li>HMI pages include Overview, Alarm, and Interlock Status</li>
+                  <li>Colors and animations are used to clarify status, such as red, yellow, green</li>
+                  <li>HMI features manual control for the Level Control Valve (LCV), allowing operators to open or close the valve directly</li>
+                  <li>The system also features a graphical display of LCV opening trends against time, making it easy to monitor control performance in real-time</li>
+                </ul>
+
+                <h6>4. Automatic Control System</h6>
+                <ul>
+                  <li>The system controls the Level Control Valve (LCV) automatically based on the input from the Level Transmitter</li>
+                  <li>The purpose is to maintain the optimal level in the separator and prevent overflow or liquid void</li>
+                  <li>Supports process stability and operational safety</li>
+                </ul>
+
+                <h6>5. Simulation & Validation</h6>
+                <ul>
+                  <li>Systems are validated through logic and hmi simulations to ensure alarm and shutdown scenarios run as designed</li>
+                  <li>Tests cover normal, abnormal, and trip logic conditions thoroughly</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
