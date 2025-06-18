@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Traffic Light</title>
+  <title>Smart Medicine Box</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -96,15 +96,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/porto2lampu.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/androidfirebase.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/porto2plc.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/Arduino.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/porto2hmi.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/wiring.svg" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -116,9 +116,9 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Project Tittle</strong>: 4-Way Intersection Traffic Light Automation with Omron PLC</li>
-                <li><strong>Field</strong>: Traffic Control System</li>
-                <li><strong>Tools Used</strong>: PLC Omron CP1H, CX-Programmer, CX-Designer</li>
+                <li><strong>Project Tittle</strong>: Design and Implementation of a Smart Medicine Box Based on IoT and Android</li>
+                <li><strong>Field</strong>: Internet of Things (IoT), Mobile Application Development</li>
+                <li><strong>Tools Used</strong>: Arduino Nano, ESP8266(NodeMCU), Arduino-IDE, Android Studio, Firebase Realtime Database</li>
               </ul>
             </div>
           </div>
@@ -129,16 +129,25 @@
               <div class="container">
                 <h2>Project Description</h2>
                 <p
-                    style="text-align: justify; text-indent: 2em; ">This project is a simulation of an automatic traffic light system at a four-way intersection using an Omron CP1H PLC as the main controller. The system is designed to manage traffic light switching regularly and safely according to the standard sequence. Logic programming is done using CX-Programmer, while the monitoring interface can be created with CX-Designer. The hardware circuit consists of red, yellow, and green LED lights, 24VDC power supply, terminal block, and others. The traffic lights are mounted on top of the board, while the cables are neatly organized at the bottom.
+                    style="text-align: justify; text-indent: 2em; ">This project is the implementation of an IoT and Android-based Smart Medicine Box designed to help patients manage their medication intake automatically and on time. The system not only provides reminders through voice alerts but also automatically opens and closes the medicine box and monitors patients' medication intake.
                 </p>
 
-                <p style="text-align: justify; text-indent: 2em; ">The traffic light cycles are automatically controlled by the PLC in the following order:</p>
-                <ul>
-                    <li>Red (Stop) - vehicle prohibited from passing</li>
-                    <li>Red and Yellow - preparation for green light</li>
-                    <li>Green (Go) - vehicle allowed to pass</li>
-                    <li>Yellow - warning of changeover to red</li>
-                </ul>
+                <p 
+                    style="text-align: justify; text-indent: 2em; ">The system uses Arduino Nano as the main controller, supported by several sensors and actuators such as the DS1302 RTC module for time setting, the MLX90614 temperature sensor for measuring the patient's body temperature without contact, and a servo motor for opening and closing the medicine box lid. In addition, there is a buzzer as an audible reminder and an HC-SR04 ultrasonic sensor to detect the presence of the patient's hand when taking medicine.
+                </p>
+                
+                <p
+                    style="text-align: justify; text-indent: 2em; ">For connectivity, an ESP8266 (NodeMCU) connected to Firebase Realtime Database is used. Patients can set their medication schedule through an Android app connected to Firebase. When the time matches the set schedule, the buzzer will sound and the servo motor will open the medicine box. When the patient takes the medication, an ultrasonic sensor detects a change in distance as a sign that the medication has been taken. After the patient's hand is removed, the system automatically closes the medication box and turns off the buzzer.
+                </p>
+
+                <p
+                    style="text-align: justify; text-indent: 2em; ">Body temperature measured by the MLX90614 is also displayed on a 16x2 LCD screen via an I2C interface, allowing patients to monitor their body temperature directly on the device.
+                </p>
+
+                <p
+                    style="text-align: justify; text-indent: 2em; ">This project integrates various technologies such as embedded systems, wireless communication, cloud databases, and Android mobile app development, providing a smart and practical solution to improve medication adherence and monitor patient health, particularly for the elderly or patients with regular medication schedules.
+                </p>
+
           </div>
         </div>
       </div>
