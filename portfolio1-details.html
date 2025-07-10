@@ -39,13 +39,26 @@
         <ul>
           <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
           <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
           <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         </ul>
       </nav>
 
       <div class="social-links text-center">
-        <a href="https://linkedin.com/in/arya-widura-swh" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+
+        <a href="https://github.com/Aryawswh" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i></a>
+
+        <a href="https://wa.me/6285866398075" class="whatsapp" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i></a>
+
+        <a href="https://mail.google.com/mail/?view=cm&to=aryawidura5667@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope-fill"></i></a>
+
+        <a href="https://linkedin.com/in/arya-widura-swh" class="linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i></a>
+
       </div>
 
     </div>
@@ -117,8 +130,8 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Project Tittle</strong>: Design of Control System and Safety System in Production Separator Based on PLC and HMI</li>
-                <li><strong>Field</strong>: Process Control & Industrial Automation</li>
-                <li><strong>Tools Used</strong>: EcoStruxure Machine Expert, Vijeo Designer, AutoCad</li>
+                <li><strong>Field</strong>: Control Systems and Instrumentation</li>
+                <li><strong>Tools Used</strong>: EcoStruxure Machine Expert, Vijeo Designer, AutoCAD</li>
               </ul>
             </div>
           </div>
@@ -129,11 +142,11 @@
               <div class="container">
                 <h2>Project Description</h2>
                 <p
-                  style="text-align: justify; text-indent: 2em; ">The main focus is the automatic control of the fluid separation process, as well as the prevention of hazardous conditions through interlocks and shutdown systems.
+                  style="text-align: justify;">The main focus is the automatic control of the fluid separation process, as well as the prevention of hazardous conditions through interlocks and shutdown systems.
                 </p>
 
                 <h6>1. P&ID Analysis to SAFE Chart</h6>
-                <p style="text-align: justify; text-indent: 2em; margin-bottom: 0.5em;">
+                <p style="text-align: justify; margin-bottom: 0.5em;">
                   The process starts with a P&ID (Piping and Instrumentation Diagram) analysis to understand the fluid path, location of instruments (such as pressure, level, temperature transmitters), and actuator equipment (valves). 
                   From the P&ID, critical parameters for control and safety systems are determined. Next, a SAFE Chart is prepared in AutoCAD, which describes the relationship between:
                 </p>
@@ -145,32 +158,48 @@
                 </ul>
 
                 <h6>2. Control Logic (PLC Logic)</h6>
+                <p style="text-align: justify; margin-bottom: 0.5em;">
+                  The control logic was implemented using EcoStruxure Machine Expert with ladder diagram programming. Analog input signals (4–20 mA) from transmitters were scaled into readable process values such as level (%) or pressure (psig).
+                </p>
+
                 <ul>
-                  <li>System built using EcoStruxure Machine Expert, with ladder logic</li>
-                  <li>Analog signals of 4-20 mA are simulated and scaled into process variables, such as level (%) or pressure (psig), using linear formulas</li>
                   <li>Create alarm and shutdown logic, such as: when the level exceeds the high-high limit, the system will enter the shutdown state, the valve will close automatically</li>
-                  <li>Operation is available in two modes: Manual and Auto</li>
+                  <li>Operation is available in two modes: Manual and Auto, particularly for LCV (Level Control Valve) control. In Auto mode, the LCV is regulated automatically based on level input. In Manual mode, operators can override control and adjust valve position manually</li>
                 </ul>
 
                 <h6>3. HMI design</h6>
+                <p style="text-align: justify; margin-bottom: 0.5em;">
+                  The Human-Machine Interface (HMI) was built using Vijeo Designer, providing intuitive and user-friendly visualization.
+                </p>
+
                 <ul>
                   <li>HMI pages include Overview, Alarm, and Interlock Status</li>
                   <li>Colors and animations are used to clarify status, such as red, yellow, green</li>
-                  <li>HMI features manual control for the Level Control Valve (LCV), allowing operators to open or close the valve directly</li>
                   <li>The system also features a graphical display of LCV opening trends against time, making it easy to monitor control performance in real-time</li>
+                  <li>Auto/Manual selection for LCV is also available via HMI, enabling smooth transitions between automatic and manual operations</li>
                 </ul>
 
                 <h6>4. Automatic Control System</h6>
+                <p style="text-align: justify; margin-bottom: 0.5em;">
+                  The automatic system maintains the liquid level inside the production separator, based on feedback from the Level Transmitter (LT).
+                </p>
+
                 <ul>
-                  <li>The system controls the Level Control Valve (LCV) automatically based on the input from the Level Transmitter</li>
-                  <li>The purpose is to maintain the optimal level in the separator and prevent overflow or liquid void</li>
-                  <li>Supports process stability and operational safety</li>
+                  <li>The system is designed to keep the level within a safe operating range: Low (1'-0"), High (2'-3"), and a normal level at 1'-8"</li>
+                  <li>Level Control Valve (LCV) automatically adjusts its position to maintain the level as close as possible to the normal setpoint (1'-8")</li>
+                  <li>This automatic regulation supports process efficiency, prevents overflow or liquid starvation, and contributes to operational safety</li>
                 </ul>
 
                 <h6>5. Simulation & Validation</h6>
+                <p style="text-align: justify; margin-bottom: 0.5em;">
+                  Before deployment, the entire control system was validated through simulation to ensure proper functionality under various scenarios.
+                </p>
+
                 <ul>
-                  <li>Systems are validated through logic and hmi simulations to ensure alarm and shutdown scenarios run as designed</li>
-                  <li>Tests cover normal, abnormal, and trip logic conditions thoroughly</li>
+                  <li>Alarm and shutdown sequences were verified against the previously developed SAFE Chart, ensuring that all defined interlocks, alarms, and shutdown conditions are triggered correctly and consistently</li>
+                  <li>Test scenarios covered normal operation, abnormal conditions, and trip logic</li>
+                  <li>Transitions between Auto/Manual modes were also tested to confirm reliable behavior during operator intervention</li>
+                  <li>The shutdown hierarchy validation ensures that the system executes the shutdown sequence according to the intended design and meets safety and process control requirements</li>
                 </ul>
 
               </div>

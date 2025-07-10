@@ -1582,6 +1582,15 @@ section,
   transform: translateY(0);
 }
 
+.title-overlay {
+  background-color: rgba(255,255,255,0.8); /* Putih transparan */
+  color: #000;
+  padding: 6px 12px;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
