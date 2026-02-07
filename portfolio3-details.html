@@ -67,7 +67,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <h1 class="mb-2 mb-lg-0">Smart Medicine Box IoT System</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html#hero">Home</a></li>
@@ -126,9 +126,11 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Project Tittle</strong>: Design and Implementation of a Smart Medicine Box Based on IoT and Android</li>
-                <li><strong>Field</strong>: Internet of Things (IoT), Mobile Application Development</li>
-                <li><strong>Tools Used</strong>: Arduino Nano, ESP8266(NodeMCU), Arduino-IDE, Android Studio, Firebase Realtime Database</li>
+                <li><strong>Project</strong>: Smart Medicine Box IoT System</li>
+    <li><strong>Field</strong>: IoT & Embedded Automation</li>
+    <li><strong>Hardware</strong>: Arduino Nano • ESP8266 (NodeMCU) • Sensors & Actuators</li>
+    <li><strong>Software</strong>: Arduino IDE • Android Studio • Firebase Realtime Database</li>
+    <li><strong>Focus</strong>: Automation Logic • IoT Connectivity • Mobile Integration</li>
               </ul>
             </div>
           </div>
@@ -138,32 +140,49 @@
               <section id="project-description" class="section">
               <div class="container">
                 <h2>Project Description</h2>
-                <p
-                    style="text-align: justify; text-indent: 2em; ">This project is the implementation of an IoT and Android-based Smart Medicine Box designed to help patients manage their medication intake automatically and on time. The system not only provides reminders through voice alerts but also automatically opens and closes the medicine box and monitors patients' medication intake.
-                </p>
 
-                <p 
-                    style="text-align: justify; text-indent: 2em; ">The system uses Arduino Nano as the main controller, supported by several sensors and actuators such as the DS1302 RTC module for time setting, the MLX90614 temperature sensor for measuring the patient's body temperature without contact, and a servo motor for opening and closing the medicine box lid. In addition, there is a buzzer as an audible reminder and an HC-SR04 ultrasonic sensor to detect the presence of the patient's hand when taking medicine.
-                </p>
-                
-                <p
-                    style="text-align: justify; text-indent: 2em; ">For connectivity, an ESP8266 (NodeMCU) connected to Firebase Realtime Database is used. Patients can set their medication schedule through an Android app connected to Firebase. When the time matches the set schedule, the buzzer will sound and the servo motor will open the medicine box. When the patient takes the medication, an ultrasonic sensor detects a change in distance as a sign that the medication has been taken. After the patient's hand is removed, the system automatically closes the medication box and turns off the buzzer.
-                </p>
+<p style="text-align: justify; margin-bottom: 1em;">
+This project is an IoT-based smart medicine box designed to automate medication reminders 
+and monitor patient interaction. The system integrates embedded control, wireless communication, 
+and Android mobile applications to support scheduled medication management.
+</p>
 
-                <p
-                    style="text-align: justify; text-indent: 2em; ">Body temperature measured by the MLX90614 is also displayed on a 16x2 LCD screen via an I2C interface, allowing patients to monitor their body temperature directly on the device.
-                </p>
+<h6>System Architecture</h6>
 
-                <p
-                    style="text-align: justify; text-indent: 2em; ">This project integrates various technologies such as embedded systems, wireless communication, cloud databases, and Android mobile app development, providing a smart and practical solution to improve medication adherence and monitor patient health, particularly for the elderly or patients with regular medication schedules.
-                </p>
+<p style="text-align: justify; margin-bottom: 1em;">
+The system uses an Arduino Nano as the main controller, supported by sensors and actuators 
+to automate the opening, monitoring, and closing of the medicine box.
+</p>
 
-          </div>
-        </div>
-      </div>
+<ul style="text-align: justify; margin-bottom: 1em;">
+<li>RTC module for real-time medication scheduling</li>
+<li>Ultrasonic sensor to detect patient interaction</li>
+<li>Servo motor for automated lid control</li>
+<li>Buzzer for audio reminders</li>
+<li>Non-contact temperature sensor for health monitoring</li>
+<li>LCD display for real-time system feedback</li>
+</ul>
 
-    </section><!-- /Portfolio Details Section -->
+<h6>IoT Connectivity</h6>
 
+<p style="text-align: justify; margin-bottom: 1em;">
+An ESP8266 (NodeMCU) module connects the system to Firebase Realtime Database, 
+allowing medication schedules to be configured through an Android application. 
+The device synchronizes with the cloud to trigger reminders and record usage events.
+</p>
+
+<h6>Mobile Integration</h6>
+
+<p style="text-align: justify;">
+An Android application was developed to manage medication schedules and monitor system status. 
+This integration demonstrates end-to-end communication between embedded hardware, 
+cloud database, and mobile user interface.
+</p>
+
+</div>
+</section>
+
+</div>
   </main>
 
   <!-- Scroll Top -->

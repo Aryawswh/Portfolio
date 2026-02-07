@@ -1898,3 +1898,141 @@ section,
     margin-top: 30px;
   }
 }
+
+/* Featured Project UI */
+.featured-project .subtitle{
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+.fp-card, .fp-side{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  height: 100%;
+}
+
+.fp-header{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fp-role{
+  font-size: 22px;
+  margin: 0 0 6px 0;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.fp-project{
+  margin: 0;
+  opacity: .8;
+}
+
+.fp-badges{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.fp-badge{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.08);
+  font-weight: 700;
+}
+
+.fp-badge-outline{
+  background: transparent;
+  border: 1px solid rgba(0,0,0,.18);
+}
+
+.fp-desc{
+  margin: 14px 0 18px;
+  line-height: 1.7;
+}
+
+.fp-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 768px){
+  .fp-grid{ grid-template-columns: 1fr; }
+  .fp-header{ flex-direction: column; }
+}
+
+.fp-item{
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.fp-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.55);
+  margin-top: 6px;
+  flex: 0 0 10px;
+}
+
+.fp-item-title{
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.fp-item-text{
+  font-size: 14px;
+  opacity: .85;
+  line-height: 1.45;
+}
+
+.fp-footer{
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+
+.fp-meta{
+  font-size: 13px;
+  opacity: .8;
+}
+
+.fp-side-title{
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.fp-list{
+  padding-left: 18px;
+  margin: 0 0 14px 0;
+  line-height: 1.7;
+}
+
+.fp-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fp-tag{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.14);
+  background: rgba(0,0,0,.02);
+  font-weight: 700;
+}

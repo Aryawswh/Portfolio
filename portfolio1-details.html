@@ -126,10 +126,11 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Project Tittle</strong>: Design of Control System and Safety System in Production Separator Based on PLC and HMI</li>
+                <li><strong>Project</strong>: Design of Control System and Safety System in Production Separator Based on PLC and HMI</li>
+                <li><strong>Role</strong>: Control System Design & Simulation Engineer</li>
                 <li><strong>Field</strong>: Control Systems and Instrumentation</li>
                 <li><strong>Tools Used</strong>: EcoStruxure Machine Expert, Vijeo Designer, AutoCAD</li>
-                <li><strong>Methodology</strong>: Analysis of BPCS and SIS, SAFE Chart Evaluation, P&ID Interpretation, and HMI-PLC Simulation</li>
+                <li><strong>Focus</strong>: BPCS/SIS Analysis • SAFE Chart • PLC-HMI Simulation</li>
                 <li><strong>Paper</strong>: <a href="https://drive.google.com/file/d/1Oysz16gZPzcR7ElRSK75pJRtq7fehHgX/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Read My Paper</a></li>
               </ul>
             </div>
@@ -140,124 +141,66 @@
               <section id="project-description" class="section">
               <div class="container">
                 <h2>Project Description</h2>
-                <p style="text-align: justify; margin-bottom: 1em;">
-                  As part of my final-year capstone project, I developed a 
-                  This project was conducted as part of my final-year capstone, in collaboration with the 
-                  Surface Engineering Division of PT Medco E&amp;P Indonesia. 
-                  The focus was on designing and simulating a control and safety system 
-                  for a three-phase production separator, a vital part of surface 
-                  facilities in upstream oil and gas operations.
-                  In this real-world industrial setting, PT Medco E&amp;P Indonesia acted as the facility owner 
-                  and provided key engineering documentation, including the 
-                  P&amp;ID and SAFE Chart (Cause &amp; Effect Matrix). 
-                  The implementation of the physical control panel and instrumentation systems was outsourced 
-                  to a third-party vendor.
-                </p>
 
-                <h6>🔍 Stage 1: Analyzing the Existing BPCS and SIS</h6>
-                <p style="text-align: justify; margin-bottom: 0.5em;">
-                  The project began with an in-depth analysis of the <strong>Process Control System (BPCS)</strong> and the <strong>Safety Instrumented System (SIS)</strong> implemented in the separator unit. 
-                  Drawing from the system’s <strong>Piping and Instrumentation Diagram (P&ID)</strong>, I mapped out key process variables including:</p>
-                <ul style="text-align: justify; margin-bottom: 0.5em;">
-                  <li>Pressure (PT, PZT)</li>
-                  <li>Level (LT, LZT)</li>
-                  <li>Valves (LCV, SDV)</li>
-                </ul>
-                <p style="text-align: justify; margin-bottom: 1em;">
-                  I studied how the <strong>BPCS</strong> is responsible for maintaining process stability under 
-                  normal operating conditions through continuous monitoring and automatic control.
-                  Meanwhile, the <strong>SIS</strong> is designed to detect abnormal scenarios such as 
-                  overpressure or low fluid level and intervene by 
-                  triggering automatic alarms and shutdowns to prevent unsafe operating states.
-                </p>
+<p style="text-align: justify; margin-bottom: 1em;">
+This project focuses on designing and simulating a PLC- and HMI-based control and safety system 
+for a three-phase production separator used in upstream oil and gas facilities. 
+The system design was developed using real industrial documentation including P&ID 
+and SAFE Chart references provided by PT Medco E&P Indonesia.
+</p>
 
-                <h6>🛡️ Stage 2: Applying LOPA for Risk Assessment</h6>
-                <p style="text-align: justify; margin-bottom: 0.5em;">
-                  To evaluate the adequacy of the existing protection, I conducted a <strong>Layers of Protection Analysis (LOPA)</strong>. This semi-quantitative method helped identify whether sufficient safety barriers were in place for each process hazard. The protection layers assessed included:
-                </p>
-                <ul style="text-align: justify; margin-bottom: 0.5em;">
-                    <li>Inherent process design</li>
-                    <li>Basic Process Control System (BPCS) control loops</li>
-                    <li>Alarm systems and operator intervention</li>
-                    <li>Safety Instrumented System (SIS) triggered automatic shutdowns</li>
-                    <li>Physical safeguards (e.g., Pressure Safety Valve (PSV), bund wall)</li>
-                    <li>Fire &amp; Gas System (planned implementation)</li>
-                    <li>Emergency response plans (plant-level and community-level)</li>
-                </ul>
-                  <p style="text-align: justify; margin-bottom: 1em;">
-                    The insights obtained from the LOPA formed the basis for designing the 
-                    <strong>SAFE Chart logic</strong> in the next stage, which defines the system’s cause-and-effect responses.
-                  </p>
+<h6>System Analysis</h6>
 
-                <h6>🧠 Stage 3: Designing the SAFE Chart</h6>
-                <p style="text-align: justify; margin-bottom: 1em;">
-                  Using <strong>AutoCAD 2025</strong>, I constructed a detailed 
-                  <strong>SAFE Chart (Safety Analysis Function Evaluation)</strong> a visual 
-                  cause-and-effect matrix that illustrates how specific process deviations 
-                  (e.g., high pressure or low liquid level) should trigger 
-                  alarms, valve closures, or complete system shutdowns.
-                </p>
+<p style="text-align: justify; margin-bottom: 1em;">
+The project began with analysis of the Basic Process Control System (BPCS) 
+and Safety Instrumented System (SIS). Process variables such as pressure, level, 
+and valve control were mapped from the P&ID to understand normal operation 
+and emergency shutdown logic.
+</p>
 
-                <h6>💻 Stage 4: Simulating the Control and Safety Logic</h6>
-                <p style="text-align: justify; margin-bottom: 0.5em;">
-                  The system logic was implemented using 
-                  <strong>EcoStruxure Machine Expert</strong>, focusing entirely on 
-                  ]software-based simulation without the use of physical PLC hardware.
-                  Key control functions developed in the simulation included:
+<ul style="text-align: justify; margin-bottom: 1em;">
+<li>Identification of key process instruments and control loops</li>
+<li>Evaluation of BPCS and SIS functional roles</li>
+<li>Risk assessment using Layers of Protection Analysis (LOPA)</li>
+<li>Development of SAFE Chart cause-and-effect logic</li>
+</ul>
 
-                <ul style="text-align: justify; margin-bottom: 1em;">
-                  <li>Analog signal scaling (4–20 mA)</li>
-                  <li>Alarm triggering based on setpoints: HH, H, L, and LL</li>
-                  <li>Shutdown logic including <strong>Process Shutdown (PSD)</strong> and <strong>Unit Shutdown (USD)</strong></li>
-                  <li>Reset and interlock mechanisms for safety validation and restart</li>
-                  <li><strong>Maintenance Override Switches (MOS)</strong> to safely bypass automatic shutdowns during maintenance</li>
-                </ul>
+<h6>Control System Simulation</h6>
 
-                <h6>👁️ Stage 5: Designing the HMI Interface</h6>
-                <p style="text-align: justify; margin-bottom: 0.5em;">
-                  An intuitive HMI interface was developed in <strong>Vijeo Designer</strong>, simulating real-time data acquisition and control visualization. The HMI displays:
-                </p>
+<p style="text-align: justify; margin-bottom: 1em;">
+The control and safety logic was implemented using EcoStruxure Machine Expert 
+through full software simulation. The system includes signal scaling, alarm handling, 
+shutdown logic, and safety interlock mechanisms.
+</p>
 
-                <ul style="text-align: justify; margin-bottom: 0.5em;">
-                  <li>Live pressure and level readings</li>           
-                  <li>Valve indicators (LCV and SDV status)</li>
-                  <li>Alarm conditions with color-coded alerts</li>
-                  <li>Auto/manual modes for valve actuation</li>
-                  <li>Trend graphs of valve movements over time</li>
-                  <li>Manual ESD button and reset features</li>
-                </ul>
+<ul style="text-align: justify; margin-bottom: 1em;">
+<li>Analog signal scaling (4–20 mA)</li>
+<li>Alarm thresholds (HH, H, L, LL)</li>
+<li>Process Shutdown (PSD) and Unit Shutdown (USD) logic</li>
+<li>Safety interlocks and reset mechanisms</li>
+<li>Maintenance Override Switch implementation</li>
+</ul>
 
-                <p style="text-align: justify; margin-bottom: 1em;">
-                  Communication between the simulated PLC and HMI was established using Modbus TCP/IP protocol.
-                </p>
+<h6>HMI Development</h6>
 
-                <h6>🔬 Stage 6: System Validation via Simulation</h6>
-                <p style="text-align: justify; margin-bottom: 0.5em;">
-                  The system was tested through a series of simulations representing both normal operation and emergency conditions, including:
-                </p>
+<p style="text-align: justify; margin-bottom: 1em;">
+A real-time operator interface was developed in Vijeo Designer 
+to visualize process variables and alarm conditions 
+using Modbus TCP/IP communication.
+</p>
 
-                <ul style="text-align: justify; margin-bottom: 0.5em;">
-                  <li>High / Low Pressure → Alarm triggered and <strong>Process Shutdown (PSD)</strong> activated</li>
-                  <li>High Liquid Level (HH) → Alarm triggered and <strong>Process Shutdown (PSD)</strong> activated</li>
-                  <li>Low Liquid Level (LL) → Alarm triggered and <strong>Unit Shutdown (USD-1)</strong> activated</li>
-                  <li>Manual ESD Activation → Instant shutdown of all SDVs, regardless of sensor input</li>
-                  <li>Maintenance Override Switch (MOS) Active → Alarm condition ignored; system continues running for maintenance operations</li>
-                </ul>
+<h6>System Validation</h6>
 
-                <p style="text-align: justify; margin-bottom: 0.5em;">
-                  Each condition was <strong>cross-verified</strong> using manual calculations and compared with the simulated 
-                  HMI responses. For example, when the level sensor indicated <strong>50%</strong>, the valve 
-                  (LCV-104) opened to <strong>45°</strong>, precisely matching the expected value using linear scaling 
-                  (90° × 50% = 45°).
-                </p>
+<p style="text-align: justify;">
+The system was validated through simulation of normal and abnormal 
+operating conditions, including pressure and level deviations 
+and emergency shutdown scenarios.
+</p>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+</div>
+</section>
 
-    </section><!-- /Portfolio Details Section -->
+</div>
 
   </main>
 
