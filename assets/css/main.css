@@ -2036,3 +2036,37 @@ section,
   background: rgba(0,0,0,.02);
   font-weight: 700;
 }
+
+/* Matikan sistem hover template */
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Biar info selalu tampil */
+.static-info{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.5);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* Tombol langsung terlihat */
+.see-details-btn{
+  display:inline-block;
+  margin-top:6px;
+  padding:6px 14px;
+  background:#c5a880;
+  color:#fff;
+  font-size:14px;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+.see-details-btn:hover{
+  background:#a8906c;
+}
